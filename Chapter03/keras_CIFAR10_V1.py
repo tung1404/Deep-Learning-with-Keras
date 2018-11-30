@@ -8,7 +8,8 @@ from keras.optimizers import SGD, Adam, RMSprop
 from keras.preprocessing.image import ImageDataGenerator
 
 #from quiver_engine import server
-
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 # CIFAR_10 is a set of 60K images 32x32 pixels on 3 channels
@@ -18,7 +19,7 @@ IMG_COLS = 32
 
 #constant
 BATCH_SIZE = 128
-NB_EPOCH = 40
+NB_EPOCH = 5
 NB_CLASSES = 10
 VERBOSE = 1
 VALIDATION_SPLIT = 0.2

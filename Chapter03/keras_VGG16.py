@@ -66,8 +66,10 @@ if __name__ == "__main__":
     K.set_image_dim_ordering("th")
 
     # Test pretrained model
-    model = VGG_16('/Users/gulli/Keras/codeBook/code/data/vgg16_weights.h5')
+    # model = VGG_16('/Users/gulli/Keras/codeBook/code/data/vgg16_weights.h5')
+    model = VGG_16()
     optimizer = SGD()
     model.compile(optimizer=optimizer, loss='categorical_crossentropy')
     out = model.predict(im)
-    print np.argmax(out)
+    print(np.argmax(out))
+    
